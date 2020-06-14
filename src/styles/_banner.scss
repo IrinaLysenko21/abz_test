@@ -1,0 +1,79 @@
+.banner {
+  /* Small screen, non-retina */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin: 0 auto;
+  max-width: 2560px;
+  height: 400px;
+  text-align: center;
+  color: $primary-text-color-light;
+  background-image: url('../images/banner-mobile@1x.png');
+  background-size: cover;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 360px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 360px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 360px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 360px),
+    only screen and (min-resolution: 192dpi) and (min-width: 360px),
+    only screen and (min-resolution: 2dppx) and (min-width: 360px) {
+    /* Small screen, retina, stuff to override above media query */
+    background-image: url('../images/banner-mobile@2x.png');
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* Medium screen, non-retina */
+    align-items: start;
+    margin-top: 60px;
+    height: 500px;
+    text-align: left;
+
+    background-image: url('../images/banner-tablet@1x.png');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    only screen and (min-resolution: 192dpi) and (min-width: 768px),
+    only screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    /* Medium screen, retina, stuff to override above media query */
+    background-image: url('../images/banner-tablet@2x.png');
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 600px;
+    /* Large screen, non-retina */
+    background-image: url('../images/banner-desktop@1x.png');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1024px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    only screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    only screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    /* Large screen, retina, stuff to override above media query */
+    background-image: url('../images/banner-desktop@2x.png');
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0 0 24px;
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}

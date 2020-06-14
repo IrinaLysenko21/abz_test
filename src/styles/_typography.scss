@@ -1,0 +1,46 @@
+.title,
+.title-2,
+.paragraph {
+  font-family: $primary-font-family;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 34px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 54px;
+  }
+}
+
+.title-2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-title {
+  @extend .title;
+  color: $primary-text-color;
+}
+
+.section-title-2 {
+  @extend .title-2;
+  color: $primary-text-color;
+}
+
+.section-paragraph {
+  @extend .paragraph;
+  color: $secondary-text-color;
+}
