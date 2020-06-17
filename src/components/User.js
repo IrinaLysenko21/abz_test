@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 
 const User = ({ user }) => {
   return (
-    <li className="users__list-item">
-      <p>{user.name}</p>
-      <p>{user.position}</p>
-      <p>{user.email}</p>
-      <p>{user.phone}</p>
-    </li>
+    <div className="user">
+      <img className="user__photo" src={user.photo} alt={`User ${user.name}`} />
+      <p className="user__name section-title-2">{user.name}</p>
+      <p className="user__info paragraph">{user.position}</p>
+      <p className="user__info paragraph">{user.email}</p>
+      <p className="user__info paragraph">{user.phone}</p>
+    </div>
   );
 };
 
 User.propTypes = {
   user: PropTypes.shape({
+    photo: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,

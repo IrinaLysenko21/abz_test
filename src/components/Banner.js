@@ -1,16 +1,11 @@
 import React from 'react';
 import Media from 'react-media';
 import Button from './Button';
+import config from '../config/config';
 
 const Banner = () => {
   return (
-    <Media
-      queries={{
-        small: '(max-width: 767px)',
-        medium: '(min-width: 768px) and (max-width: 1023px)',
-        large: '(min-width: 1024px)',
-      }}
-    >
+    <Media queries={config.GLOBAL_MEDIA_QUERIES}>
       {matches => (
         <div className="banner">
           <div className="container">

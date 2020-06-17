@@ -10,7 +10,7 @@
   height: 400px;
   text-align: center;
   color: $primary-text-color-light;
-  background-image: url('../images/banner-mobile@1x.png');
+  background-image: url('../../images/banner-mobile@1x.png');
   background-size: cover;
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 360px),
@@ -20,7 +20,7 @@
     only screen and (min-resolution: 192dpi) and (min-width: 360px),
     only screen and (min-resolution: 2dppx) and (min-width: 360px) {
     /* Small screen, retina, stuff to override above media query */
-    background-image: url('../images/banner-mobile@2x.png');
+    background-image: url('../../images/banner-mobile@2x.png');
   }
 
   @media only screen and (min-width: 768px) {
@@ -30,7 +30,7 @@
     height: 500px;
     text-align: left;
 
-    background-image: url('../images/banner-tablet@1x.png');
+    background-image: url('../../images/banner-tablet@1x.png');
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -40,13 +40,13 @@
     only screen and (min-resolution: 192dpi) and (min-width: 768px),
     only screen and (min-resolution: 2dppx) and (min-width: 768px) {
     /* Medium screen, retina, stuff to override above media query */
-    background-image: url('../images/banner-tablet@2x.png');
+    background-image: url('../../images/banner-tablet@2x.png');
   }
 
   @media only screen and (min-width: 1024px) {
     height: 600px;
     /* Large screen, non-retina */
-    background-image: url('../images/banner-desktop@1x.png');
+    background-image: url('../../images/banner-desktop@1x.png');
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -56,7 +56,7 @@
     only screen and (min-resolution: 192dpi) and (min-width: 1024px),
     only screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     /* Large screen, retina, stuff to override above media query */
-    background-image: url('../images/banner-desktop@2x.png');
+    background-image: url('../../images/banner-desktop@2x.png');
   }
 
   &__title {

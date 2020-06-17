@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import User from './User';
+import Button from './Button';
 
 function Users({ users }) {
   return (
@@ -12,9 +13,12 @@ function Users({ users }) {
         </p>
         <ul className="users__list">
           {users.map(user => (
-            <User key={user.id} user={user} />
+            <li className="users__list-item" key={user.id}>
+              <User user={user} />
+            </li>
           ))}
         </ul>
+        <Button text="Show more" />
       </div>
     </section>
   );
